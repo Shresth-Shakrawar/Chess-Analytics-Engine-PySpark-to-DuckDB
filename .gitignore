@@ -1,13 +1,12 @@
 # =========================
 # 1. DATA & DATABASES (CRITICAL)
 # =========================
-# Ignore all raw, bronze, and gold data files.
-data/
+data/*
+!data/*.py  <-- This exclamation point tells Git "Except Python files!"
 *.pgn
 *.parquet
 *.csv
-*.json
-
+*.json#
 # Ignore local DuckDB database instances and write-ahead logs
 *.duckdb
 *.duckdb.wal
