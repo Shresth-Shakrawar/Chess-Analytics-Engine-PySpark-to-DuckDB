@@ -1,0 +1,6 @@
+python-chess
+polars
+pyspark
+duckdb
+streamlit
+altair
