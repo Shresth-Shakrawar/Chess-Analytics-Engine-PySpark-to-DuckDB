@@ -1,0 +1,46 @@
+# =========================
+# 1. DATA & DATABASES (CRITICAL)
+# =========================
+# Ignore all raw, bronze, and gold data files.
+data/
+*.pgn
+*.parquet
+*.csv
+*.json
+
+# Ignore local DuckDB database instances and write-ahead logs
+*.duckdb
+*.duckdb.wal
+
+# =========================
+# 2. PYTHON & ENVIRONMENTS
+# =========================
+# Ignore the virtual environment
+chess-env/
+venv/
+env/
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# 3. PYSPARK & JAVA TEMP FILES
+# =========================
+# Spark creates local metadata and log files when it runs
+spark-warehouse/
+metastore_db/
+derby.log
+.java/
+
+# =========================
+# 4. OS & IDE FILES
+# =========================
+# macOS clutter (just in case you ever pull this on a Mac)
+.DS_Store
+
+# VS Code / IDE settings 
+.vscode/
+.idea/
