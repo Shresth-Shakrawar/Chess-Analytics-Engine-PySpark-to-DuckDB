@@ -50,12 +50,11 @@ top_opening = filtered_openings[0] if filtered_openings else "N/A"
 # 2. Global openings for the Deep Dive Tab (spanning the whole 800-2800 range)
 global_openings = get_popular_openings(800, 2800)
 
-cols = st.columns(5)
+cols = st.columns(4)
 metrics = [
     ("Games Analyzed", f"{kpis['total_games']:,}"),
     ("White Wins", f"{kpis['white_win_rate']:.1f}%"),
     ("Draws", f"{kpis['draw_rate']:.1f}%"),
-    ("Average Rating", f"{kpis['avg_elo']:,}"),
     ("Top Opening", top_opening) 
 ]
 
